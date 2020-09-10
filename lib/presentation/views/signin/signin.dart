@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
-class SignUpView extends StatelessWidget {
+class SignInView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SafeArea(
+      child: Scaffold(
+        body: Center(
+          child: Text('sign view'),
+        ),
+      ),
+    );
   }
 }
