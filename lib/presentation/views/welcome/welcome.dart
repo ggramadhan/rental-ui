@@ -24,18 +24,19 @@ class WelcomeView extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Capture every moment you live', style: MyText.headline),
+                  Text(
+                    'Capture every moment you live',
+                    style: MyText.headlineWhite,
+                  ),
                   SizedBox(height: 5),
                   Text(
                       'Get most high camera on rent and capture every moment you live.',
-                      style: MyText.subHeadline),
+                      style: MyText.subHeadlineWhite),
                   SizedBox(height: 30),
-                  OutlineButton(
-                    focusColor: Colors.white,
-                    highlightedBorderColor: Colors.white,
-                    textColor: Colors.white,
+                  RaisedButton(
                     child: Text(
                       'Lets get started',
+                      style: MyText.subHeadlineBlack,
                     ),
                     onPressed: () {
                       Navigator.push(
@@ -48,7 +49,7 @@ class WelcomeView extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
