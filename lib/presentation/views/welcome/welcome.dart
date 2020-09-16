@@ -34,12 +34,15 @@ class WelcomeView extends StatelessWidget {
                       style: MyText.subHeadlineWhite),
                   SizedBox(height: 30),
                   RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
                     child: Text(
                       'Lets get started',
                       style: MyText.subHeadlineBlack,
                     ),
                     onPressed: () {
-                      Navigator.push(
+                      Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
                           builder: (BuildContext context) => SignInView(),
