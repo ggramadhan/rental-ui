@@ -62,7 +62,7 @@ class SignInView extends StatelessWidget {
                   hintText: 'Password',
                   hintStyle: MyText.subHeadlineWhite,
                   prefixIcon: Icon(
-                    Icons.email,
+                    Icons.enhanced_encryption,
                     color: Colors.white,
                   ),
                   enabledBorder: OutlineInputBorder(
@@ -75,6 +75,24 @@ class SignInView extends StatelessWidget {
                   ),
                   fillColor: Colors.black54,
                   filled: true,
+                ),
+              ),
+              SizedBox(height: 10),
+              Container(
+                width: 150,
+                height: 50,
+                child: RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  color: Colors.black,
+                  onPressed: () {},
+                  child: Center(
+                    child: Text(
+                      'Sign In',
+                      style: MyText.subHeadlineWhite,
+                    ),
+                  ),
                 ),
               ),
               SizedBox(height: 10),
